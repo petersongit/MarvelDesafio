@@ -7,6 +7,21 @@
     tools:context=".MainActivity"
     android:background="@color/dark_grey">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/light_red">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Marvel HQ's"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+
+    </androidx.cardview.widget.CardView>
 
 
 
