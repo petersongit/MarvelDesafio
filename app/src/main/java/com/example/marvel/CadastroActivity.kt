@@ -2,13 +2,13 @@ package com.example.marvel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentManager
+import kotlinx.android.synthetic.main.activity_cadastro.*
 
-class MainActivity : AppCompatActivity() {
+class CadastroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_login)
+        setContentView(R.layout.activity_cadastro)
 
-
+        imgCadastrar.bringToFront()
     }
 }

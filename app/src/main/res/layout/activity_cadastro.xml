@@ -10,22 +10,29 @@
 
 
 
+
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/light_red"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_gravity="center_horizontal|center_vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/light_red"
-            android:gravity="center|top"
-            android:text="Welcome to the Marvel HQ'S"
-            android:textColor="@color/white"
-            android:textSize="25dp" />
+        <ImageView
+            android:id="@+id/imgCadastrar"
+            android:layout_width="80dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="150dp"
+            android:background="@android:drawable/ic_dialog_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -37,9 +44,22 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingVertical="30dp"
+                android:orientation="vertical"
                 android:paddingHorizontal="10dp"
-                android:orientation="vertical">
+                android:paddingVertical="30dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="@color/light_red" />
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10" />
 
 
                 <TextView
@@ -48,8 +68,9 @@
                     android:text="@string/email"
                     android:textColor="@color/light_red" />
 
+
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -70,39 +91,21 @@
                     android:ems="10"
                     android:inputType="textPassword" />
 
-                <CheckBox
-                    android:id="@+id/checkBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/dark_grey"
-                    android:buttonTint="@color/light_red"
-
-                    android:text="@string/remember"
-                    android:textSize="15sp" />
-
 
                 <Button
                     android:id="@+id/button"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="40dp"
                     android:backgroundTint="@color/light_red"
                     android:textColor="@color/white"
-                    android:text="@string/Login"
+                    android:text="@string/save"
                     android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/lblAcessarTelaDeCadastro"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:gravity="center"
-                    android:text="@string/create_account"
-                    android:textSize="18sp" />
 
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
