@@ -9,6 +9,11 @@ class CadastroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cadastro)
 
-        imgCadastrar.bringToFront()
+        setSupportActionBar(toolBarTelaCadastrado)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+
+        //imgCadastrar.bringToFront()
     }
 }

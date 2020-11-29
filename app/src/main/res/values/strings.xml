@@ -10,6 +10,7 @@
     <string name="create_account">Create account</string>
     <string name="name">Name</string>
     <string name="save">SAVE</string>
+    <string name="tituloTelaCadastro">Register</string>
 
 
 </resources>

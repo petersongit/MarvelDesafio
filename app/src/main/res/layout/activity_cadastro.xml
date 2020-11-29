@@ -8,7 +8,14 @@
     tools:context=".LoginFragment"
     android:background="@color/dark_grey">
 
-
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarTelaCadastrado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_red"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white"
+        app:title="@string/tituloTelaCadastro"/>
 
 
 

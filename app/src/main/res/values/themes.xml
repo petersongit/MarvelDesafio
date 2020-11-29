@@ -17,4 +17,13 @@
 
         <!-- Customize your theme here. -->
     </style>
+
+
+
+
+
+    <style name="Theme.MarvelTelaInicial" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/light_red</item>
+    </style>
+
 </resources>

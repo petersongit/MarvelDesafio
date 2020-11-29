@@ -46,7 +46,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/email"
-                    android:textColor="@color/light_red" />
+                    android:textColor="@color/light_red"/>
 
                 <EditText
                     android:id="@+id/editTextTextEmailAddress"
