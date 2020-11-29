@@ -1,8 +1,9 @@
-package com.example.marvel
+package com.example.marvel.iu
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.marvel.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -18,11 +19,18 @@ class LoginActivity : AppCompatActivity() {
             carregarTelaCadastro()
         }
 
+        btnTelaInicial.setOnClickListener{
+            carregarTelaInicial()
+        }
+
     }
 
 
 
-
+    fun carregarTelaInicial(){
+        var intent = Intent(this, ListaHQActivity::class.java)
+        startActivity(intent)
+    }
 
     fun carregarTelaCadastro(){
         var intent = Intent(this, CadastroActivity::class.java)

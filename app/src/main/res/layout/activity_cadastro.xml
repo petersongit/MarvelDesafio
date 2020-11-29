@@ -106,7 +106,7 @@
                     android:layout_marginTop="40dp"
                     android:backgroundTint="@color/light_red"
                     android:textColor="@color/white"
-                    android:text="@string/save"
+                    android:text="GUI PAPAI TE AMA"
                     android:textSize="20sp" />
 
 
