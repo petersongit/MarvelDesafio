@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".iu.ListaHQActivity">
+    tools:context=".iu.ListaHQActivity"
+    android:background="@color/cardview_dark_background">
 
 
     <LinearLayout
@@ -19,8 +20,8 @@
             android:id="@+id/recycle_hq"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:itemCount="5"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:itemCount="15"
             tools:listitem="@layout/item_hq" />
 
 

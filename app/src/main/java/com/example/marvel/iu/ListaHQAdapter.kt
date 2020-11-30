@@ -28,7 +28,7 @@ class ListaHQAdapter(private val listHQ: ArrayList<HQ>): RecyclerView.Adapter<Li
         //return 2
 
         //return listHQ.size
-        return listHQ.count()
+        return listHQ.size
     }
 
     override fun onBindViewHolder(holder: ListaHQViewHolder, position: Int) {
@@ -41,6 +41,10 @@ class ListaHQAdapter(private val listHQ: ArrayList<HQ>): RecyclerView.Adapter<Li
     }
 
 
+    fun addList(list: ArrayList<HQ>){
+        listHQ.addAll(list)
+        notifyDataSetChanged()
+    }
 
     class ListaHQViewHolder(view: View): RecyclerView.ViewHolder(view) {
         //val imgHQ: ImageView = view.imgLogoHQ
