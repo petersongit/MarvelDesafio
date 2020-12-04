@@ -9,7 +9,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.marvel.R
 import com.example.marvel.model.HQ
+import kotlinx.android.synthetic.main.item_comic.view.*
 import kotlinx.android.synthetic.main.item_hq.view.*
+import kotlinx.android.synthetic.main.item_hq.view.txtNumeroEdicao
 
 class ListaHQAdapter(private val listHQ: ArrayList<HQ>): RecyclerView.Adapter<ListaHQAdapter.ListaHQViewHolder>() {
 
@@ -18,7 +20,7 @@ class ListaHQAdapter(private val listHQ: ArrayList<HQ>): RecyclerView.Adapter<Li
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListaHQViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_hq, parent,false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_comic, parent,false)
         return ListaHQViewHolder(view)
     }
 
@@ -33,8 +35,8 @@ class ListaHQAdapter(private val listHQ: ArrayList<HQ>): RecyclerView.Adapter<Li
 
     override fun onBindViewHolder(holder: ListaHQViewHolder, position: Int) {
         var hq = listHQ[position]
-        holder.txtEdicaoHQ.text = hq.edicaoHQ
-        holder.imgHQ.text = hq.logoHQ
+        //holder.txtEdicaoHQ.text = hq.edicaoHQ
+        //holder.imgHQ.text = hq.logoHQ
 
         Log.i("Logo", hq.logoHQ)
         Log.i("Edicao", hq.edicaoHQ)
@@ -47,8 +49,8 @@ class ListaHQAdapter(private val listHQ: ArrayList<HQ>): RecyclerView.Adapter<Li
     }
 
     class ListaHQViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        //val imgHQ: ImageView = view.imgLogoHQ
-        val imgHQ: TextView = view.imgLogoHQ
+        val imgHQ: ImageView = view.imgLogoComic
+       //  val imgHQ: TextView = view.imgLogoHQ
         val txtEdicaoHQ: TextView = view.txtNumeroEdicao
     }
 }

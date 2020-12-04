@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.marvel.R
 import com.example.marvel.model.HQ
 import com.example.marvel.service.repository
-import com.example.marvel.teste.service.RetrofitInitializer
 import kotlinx.android.synthetic.main.activity_lista_hq.*
 
 /*private lateinit var recyclerView: RecyclerView
@@ -41,9 +40,6 @@ class ListaHQActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_hq)
-
-
-        RetrofitInitializer()
 
 
         recycle_hq.layoutManager = GridLayoutManager(this, 3)
