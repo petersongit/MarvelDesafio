@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:itemCount="15"
-            tools:listitem="@layout/item_hq" />
+            tools:listitem="@layout/item_comic" />
 
 
     </LinearLayout>

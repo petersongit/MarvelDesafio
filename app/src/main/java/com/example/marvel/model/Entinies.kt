@@ -1,5 +1,7 @@
 package com.example.marvel.model
 
+import com.google.gson.annotations.SerializedName
+
 
 data class Res(val data: Data)
 
@@ -12,3 +14,8 @@ data class Thumbnail(val path: String, val extension: String)
 data class Comics(val items: ArrayList<Items>)
 
 data class Items(val resourceURI: String, val name: String)
+
+
+
+
+

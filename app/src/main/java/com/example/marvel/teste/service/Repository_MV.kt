@@ -1,4 +1,4 @@
-package com.example.marvel.service
+package com.example.marvel.teste.service
 
 import com.example.marvel.model.Res
 import com.google.gson.JsonArray
@@ -13,7 +13,7 @@ import retrofit2.http.Query
 
 
 
-interface Repository_MarvelService {
+interface Repository_MV {
 
     @GET("characters")
     suspend fun getResults(
@@ -27,16 +27,3 @@ interface Repository_MarvelService {
 
 
 
-
-
-val urlApiMarvel: String = "https://gateway.marvel.com/v1/public/"
-
-
-val retrofit = Retrofit.Builder()
-    .baseUrl(urlApiMarvel)
-    .addConverterFactory(GsonConverterFactory.create())
-    .build()
-
-
-
-val repository: Repository_MarvelService = retrofit.create(Repository_MarvelService::class.java)

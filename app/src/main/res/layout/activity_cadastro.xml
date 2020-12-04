@@ -5,7 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginFragment"
     android:background="@color/dark_grey">
 
     <androidx.appcompat.widget.Toolbar
@@ -18,33 +17,23 @@
         app:title="@string/tituloTelaCadastro"/>
 
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
         android:layout_marginHorizontal="16dp"
-        app:cardCornerRadius="20dp"
         android:backgroundTint="@color/light_red"
+        app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="16dp"
-        android:layout_gravity="center_horizontal|center_vertical">
+        tools:layout_editor_absoluteX="16dp">
 
-        <ImageView
-            android:id="@+id/imgCadastrar"
-            android:layout_width="80dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="150dp"
-            android:background="@android:drawable/ic_dialog_info"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="70dp"
             app:cardCornerRadius="20dp">
 
 
@@ -105,13 +94,38 @@
                     android:layout_height="60dp"
                     android:layout_marginTop="40dp"
                     android:backgroundTint="@color/light_red"
+                    android:text="@string/save"
                     android:textColor="@color/white"
-                    android:text="GUI PAPAI TE AMA"
                     android:textSize="20sp" />
 
 
             </LinearLayout>
+
+
         </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="400dp"
+        app:cardCornerRadius="700dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolBarTelaCadastrado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cadastro"
+
+
+            app:layout_constraintTop_toBottomOf="@+id/toolBarTelaCadastrado">
+
+        </ImageView>
     </androidx.cardview.widget.CardView>
 
 
